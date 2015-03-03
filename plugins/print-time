@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+#http://stackoverflow.com/questions/13125825/zsh-update-prompt-with-current-time-when-a-command-is-started
+
+preexec () {
+  DATE=`date +"%H:%M:%S %Y-%m-%d"`
+  C=$(($COLUMNS-20))
+  echo -e "\033[1A\033[${C}C \e[1m\e[38;5;240m${DATE}\e[0m"
+}
+
+
