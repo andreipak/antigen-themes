@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+# http://www.teamocil.com/#extras/zsh-autocompletion
+[ -d "$HOME/.teamocil" ] && compctl -g '~/.teamocil/*(:t:r)' teamocil
+
